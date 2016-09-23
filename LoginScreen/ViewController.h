@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kHeightOfStatusBar 30.0
+#define kAllUIElementHeight 40.0
+#define kHorizantalPadding 20.0
+#define kVerticalPadding 20.0
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
+{
+    UITextField *myIdTextfield;
+    UITextField *myPasswordTextfield;
 
+    UIView *backView;
+
+}
 
 @end
 
